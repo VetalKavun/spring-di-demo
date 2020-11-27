@@ -9,5 +9,13 @@
         <constructor-arg ref="messageProvider"/>
     </bean>
 
+    <bean id="provider" class="com.study.code.const_arg_resolution.MessageProvider">
+        <constructor-arg type="java.lang.String" value="Message"/>
+        <constructor-arg type="int" value="45"/>
+    </bean>
+
+    <bean id="printer" class="com.study.code.const_arg_resolution.MessagePrinter">
+        <constructor-arg ref="provider"/>
+    </bean>
 
 </beans>
