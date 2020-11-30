@@ -8,6 +8,6 @@ public class MessagePrinter {
     }
 
     public void print(){
-        System.out.println(messageProvider.getMessage() + messageProvider.getCount());
+        System.out.println(messageProvider.getMessage());
     }
 }
