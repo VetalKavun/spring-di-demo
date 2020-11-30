@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="line" class="com.study.code.lazy_init.Line" lazy-init="true">
+        <property name="length" value="20.9"/>
+    </bean>
+
+    <bean id="user" class="com.study.code.lazy_init.User">
+        <property name="name" value="Tim"/>
+    </bean>
+
+    <bean id="figure" class="com.study.code.lazy_init.Figure">
+        <property name="line" ref="line"/>
+    </bean>
+
+</beans>
