@@ -18,4 +18,29 @@
         <constructor-arg ref="provider"/>
     </bean>
 
+    <bean id="collectionDemo" class="com.study.code.collections_injection.CollectionDemo">
+        <property name="listOfStrings">
+            <list>
+                <value>first string in the list</value>
+                <value>second string in the list</value>
+                <value>third string in the list</value>
+            </list>
+        </property>
+        <property name="mapOfStrings">
+            <map>
+                <entry key="1" value="first string in the list"/>
+                <entry key="2" value="second string in the list"/>
+                <entry key="3" value="third string in the list"/>
+                <entry key="4" value="forth string in the list"/>
+            </map>
+        </property>
+        <property name="setOfStrings">
+            <set>
+                <value>first string in the set</value>
+                <value>second string in the set</value>
+                <value>third string in the set</value>
+            </set>
+        </property>
+    </bean>
+
 </beans>
